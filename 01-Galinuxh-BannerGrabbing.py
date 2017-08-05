@@ -49,7 +49,7 @@ def conexion(hosts,port):
         #vulcon = vul.readline()
         for vul in vul:
             if datos.strip() in vul.strip():
-                print("Happy Hack  *  El Servicio  esl Vulnerable * \n")
+                print("Happy Hack  *  El Servicio  es Vulnerable * \n")
                 vulnerable = True
         if vulnerable == False:
             print("No se encontraron vulnerabilidades Conocidas.\n")
