@@ -39,25 +39,20 @@ def conexion(hosts,port):
         s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         s.connect((hosts,port))
         datos = s.recv(1024)
-        if datos == 0 :
-            print("No se secibieron datos")
-            print(ip.strip())
 
-        else:
 
-            print("Banner recibido del servidor remoto")
-            print(datos)
-            print("Verificando si es  Existe una vulnerabilidad\n")
-            time.sleep(3)
-            vul = open("/root/Documents/EvilPython/ban.txt","r")
-            #vulcon = vul.readline()
-            for vul in vul:
-                if datos.strip() in vul.strip():
-                    print("Happy Hack  *  El Servicio  esl Vulnerable * \n")
-                    vulnerable = True
-
-            if vulnerable == False:
-                print("No se encontraron vulnerabilidades Conocidas en el archivo gab.txt \n")
+        print("Banner recibido del servidor remoto")
+        print(datos)
+        print("Verificando si es  Existe una vulnerabilidad\n")
+        time.sleep(3)
+        vul = open("/root/Documents/EvilPython/ban.txt","r")
+        #vulcon = vul.readline()
+        for vul in vul:
+            if datos.strip() in vul.strip():
+                print("Happy Hack  *  El Servicio  esl Vulnerable * \n")
+                vulnerable = True
+        if vulnerable == False:
+            print("No se encontraron vulnerabilidades Conocidas.\n")
 
 
 
