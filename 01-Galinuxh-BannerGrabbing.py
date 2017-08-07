@@ -17,17 +17,17 @@ def banner ():
 
 
     evilbanner = """
-   ********             ** **                          **
-  **//////**           /**//                          /**
- **      //   ******   /** ** *******  **   ** **   **/**
-/**          //////**  /**/**//**///**/**  /**//** ** /******
-/**    *****  *******  /**/** /**  /**/**  /** //***  /**///**
-//**  ////** **////**  /**/** /**  /**/**  /**  **/** /**  /**
- //******** //******** ***/** ***  /**//****** ** //**/**  /**
-  ////////   //////// /// // ///   //  ////// //   // //   //
------------------------------------------------------------------
-    EvilPython : Banner Grabbing  by Jóse Luis Galindo Herrera
-    email:  galinuxh@gmail.com..
+
+ ██████╗  █████╗ ██╗     ██╗███╗   ██╗██╗   ██╗██╗  ██╗
+██╔════╝ ██╔══██╗██║     ██║████╗  ██║██║   ██║╚██╗██╔╝
+██║  ███╗███████║██║     ██║██╔██╗ ██║██║   ██║ ╚███╔╝
+██║   ██║██╔══██║██║     ██║██║╚██╗██║██║   ██║ ██╔██╗
+╚██████╔╝██║  ██║███████╗██║██║ ╚████║╚██████╔╝██╔╝ ██╗
+ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝
+----------------------------------------------------------
+EvilPython : Banner Grabbing  by José Luis Galindo Herrera
+email      :  galinuxh@gmail.com..
+github     :  https://github.com/galinuxh/EvilPython/
     """
     print(evilbanner)
 
@@ -45,7 +45,7 @@ def conexion(hosts,port):
         print(datos)
         print("Verificando si es  Existe una vulnerabilidad\n")
         time.sleep(3)
-        vul = open("/root/Documents/EvilPython/ban.txt","r")
+        vul = open("ban.txt","r")
         #vulcon = vul.readline()
         for vul in vul:
             if datos.strip() in vul.strip():
