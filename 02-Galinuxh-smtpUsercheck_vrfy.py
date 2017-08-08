@@ -32,7 +32,7 @@ def banner ():
 |  $$$$$$/|  $$$$$$$| $$| $$| $$  | $$|  $$$$$$/ /$$/\  $$| $$  | $$
  \______/  \_______/|__/|__/|__/  |__/ \______/ |__/  \__/|__/  |__/
 --------------------------------------------------------------------
-EvilPython : Enumeracion de Usarios por SMTP - VRFY
+EvilPython : Enumeracion de Usarios por SMTP metodo VRFY
 Autor      : José Luis Galindo Herrera
 email      : galinuxh@gmail.com..
 github     : https://github.com/galinuxh/EvilPython/

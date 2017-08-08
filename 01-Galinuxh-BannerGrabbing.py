@@ -60,8 +60,8 @@ def conexion(hosts,port):
 
 
 
-    except:
-        print("Error  la realizar la conexión, el puerto no esta abierto")
-        pass
+    except socket.error, msg: # manejo de errores de conexion con socket
+        print("Error al conectar con el servidor :"+ str(msg))
+        sys.exit(1)
 banner()
 conexion(arg.host,arg.port)
